@@ -21,6 +21,10 @@
     android:key="firmware_version_screen"
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
+    
+    <PreferenceScreen android:key="blackbox_logo"
+        android:enabled="false"
+        android:layout="@layout/blackbox_logo_row" />
 
     <!-- Android version -->
     <Preference
@@ -30,7 +34,7 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
+    <!-- BlackBoxHybrid version -->
     <Preference
         android:key="lineage_version"
         android:title="@*lineageos.platform:string/lineage_version"
@@ -38,7 +42,7 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
 
-    <!-- Lineage API version -->
+    <!-- BlackBoxHybrid API version -->
     <Preference
         android:key="lineage_api_version"
         android:title="@*lineageos.platform:string/lineage_api_level"

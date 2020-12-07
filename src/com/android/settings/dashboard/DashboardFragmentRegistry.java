@@ -19,7 +19,6 @@ package com.android.settings.dashboard;
 import android.util.ArrayMap;
 
 import com.android.settings.DisplaySettings;
-import com.android.settings.LegalSettings;
 import com.android.settings.accounts.AccountDashboardFragment;
 import com.android.settings.accounts.AccountDetailDashboardFragment;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
@@ -110,8 +109,6 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_PRIVACY);
         PARENT_TO_CATEGORY_KEY_MAP.put(EnterprisePrivacySettings.class.getName(),
                 CategoryKey.CATEGORY_ENTERPRISE_PRIVACY);
-        PARENT_TO_CATEGORY_KEY_MAP.put(LegalSettings.class.getName(),
-                CategoryKey.CATEGORY_ABOUT_LEGAL);
         PARENT_TO_CATEGORY_KEY_MAP.put(MyDeviceInfoFragment.class.getName(),
                 CategoryKey.CATEGORY_MY_DEVICE_INFO);
         PARENT_TO_CATEGORY_KEY_MAP.put(BatterySaverSettings.class.getName(),
